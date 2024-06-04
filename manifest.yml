@@ -1,0 +1,9 @@
+applications:
+  - name: my-flask-app
+    memory: 128M
+    buildpacks:
+      - python_buildpack
+    env:
+      PYTHON_VERSION: 3.8
+      FLASK_ENV: production
+    command: ./release.sh
